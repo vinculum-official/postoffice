@@ -180,11 +180,11 @@
 						type="button"
 						class="ml-1 cursor-pointer text-black underline underline-offset-4"
 						onclick={() => {
-							mode = 'login';
+							mode = 'signup';
 							error = '';
 						}}
 					>
-						Sign in
+						Sign up
 					</button>
 				{/if}
 			</div>
