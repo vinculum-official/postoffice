@@ -87,7 +87,7 @@
 					maxlength="500"
 					required
 					placeholder="What's on your mind?"
-					class="min-h-28 w-full resize-y border-0 bg-transparent text-base leading-relaxed outline-none placeholder:text-neutral-400"
+					class="min-h-28 w-full resize-none rounded-2xl border-2 border-neutral-200 bg-transparent text-base leading-relaxed outline-none placeholder:text-neutral-400 hover:border-neutral-300 focus:border-black focus:ring-0 focus:outline-none"
 				></textarea>
 
 				{#if form?.error}
@@ -105,7 +105,7 @@
 					<button
 						type="submit"
 						disabled={!content.trim() || Array.from(content).length > 500}
-						class="bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-40"
+						class="rounded-2xl bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-40"
 					>
 						Send note
 					</button>
